@@ -38,7 +38,7 @@ const Movies = () => {
                     <div className="movies-grid text-white">
                         {error}
                         {
-                            movie.map((mob, index) => {
+                            movie.map((mob) => {
                                 return (
                                     <Card key={mob.id} title={mob.title} image={mob.poster_path} vote={mob.vote_average} anchor={`/movie/${mob.id}`} />
                                 )
